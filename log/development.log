@@ -1146,3 +1146,11 @@ Processing by BookpostController#show as HTML
   [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", "1"]]
   Rendered bookpost/show.html.erb within layouts/application (1.2ms)
 Completed 200 OK in 212ms (Views: 208.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin" for 123.17.179.119 at 2016-04-10 09:44:24 +0000
+Cannot render console from 123.17.179.119! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Admin::DashboardController#index as HTML
+  [1m[35mAdminUser Load (0.5ms)[0m  SELECT  "admin_users".* FROM "admin_users" WHERE "admin_users"."id" = ?  ORDER BY "admin_users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/bundler/gems/activeadmin-d84f8190edac/app/views/active_admin/page/index.html.arb (260.7ms)
+Completed 200 OK in 286ms (Views: 274.1ms | ActiveRecord: 0.5ms)
