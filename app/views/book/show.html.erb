@@ -1,2 +1,9 @@
-<h1>Book#show</h1>
-<p>Find me in app/views/book/show.html.erb</p>
+    <% @bookposts.each do |bookpost| %>
+		<% if bookpost.header %>
+			<h3 style="margin-left:10px"><%= bookpost.title %></h3>
+		<% else %>	
+			<%= link_to  [bookpost.book, bookpost] do %>
+				 <%= bookpost.title  %>
+			<% end %>
+		<% end %>	
+	<% end %> 	
